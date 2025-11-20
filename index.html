@@ -21,7 +21,93 @@
     <button onclick="openSongs()">🎵 Songs</button>
     <button onclick="openChat()">💬 Chat</button>
     <button onclick="openGames()">🎮 Games</button>
-  </div>
+  </div> 
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HKJApp — HKJ</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase (compat CDN for simplicity) -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-storage-compat.js"></script>
+
+  <script defer src="poems.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1 class="title">💜 HKJApp</h1>
+    <div id="userBadge">connecting…</div>
+  </header>
+
+  <main class="grid">
+    <section class="card" id="poemSection">
+      <h2>📜 Poem of the Day</h2>
+      <div id="poemBox" class="poemBox">Loading poem...</div>
+      <button id="showPoemBtn">Show Poem</button>
+    </section>
+
+    <section class="card" id="cameraSection">
+      <h2>📷 Camera & Upload</h2>
+      <video id="video" autoplay playsinline style="display:none;"></video>
+      <canvas id="captureCanvas" style="display:none;"></canvas>
+      <div class="row">
+        <button id="startCameraBtn">Start Camera</button>
+        <button id="captureBtn">Capture & Upload</button>
+        <button id="stopCameraBtn">Stop Camera</button>
+      </div>
+      <input id="photoFile" type="file" accept="image/*">
+      <div id="gallery" class="grid-small"></div>
+    </section>
+
+    <section class="card" id="songsSection">
+      <h2>🎵 Songs</h2>
+      <input id="songFile" type="file" accept="audio/*">
+      <div id="songsList"></div>
+    </section>
+
+    <section class="card" id="chatSection">
+      <h2>💬 Chat (live)</h2>
+      <div id="chatBox" class="chatBox"></div>
+      <div class="row">
+        <input id="chatInput" placeholder="Message..." />
+        <button id="sendChatBtn">Send</button>
+      </div>
+    </section>
+
+    <section class="card" id="drawSection">
+      <h2>🎨 Shared Drawing</h2>
+      <div class="drawArea">
+        <canvas id="drawCanvas"></canvas>
+      </div>
+      <div class="row">
+        <button id="clearDrawBtn">Clear (save)</button>
+        <button id="downloadDrawBtn">Download JSON</button>
+      </div>
+    </section>
+
+    <section class="card" id="gamesSection">
+      <h2>🎮 Games</h2>
+      <div id="ticTacToe"></div>
+      <div id="dressUp"></div>
+      <div id="carRace"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>HKJApp • Purple & bubbly • Use Firebase for live features</small>
+  </footer>
+
+</body>
+</html>
+
 
   <p id="poemBox"></p>
 
