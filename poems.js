@@ -49,3 +49,26 @@ const poems = [
 "The way you look at the world…",
 "Every small thing about you feels like poetry…"
 ];
+const poems = [
+"How could I forget you when your name is always woven into the rhythm of my soul?",
+"I have never seen someone like the moon and I have never seen someone like you. The moon shines the night and you shine my world.",
+"Can you? When I am lying in bed at night and my mind drifts your way when my day is spent lost in your fantasy can you feel me thinking about you?",
+"You make the world feel less like noise and more like music.",
+"You didn’t ruin me, you just made it harder for anyone else to reach me.",
+"And maybe, just maybe your heart is a garden in need of a gardener who knows how to plant hope.",
+"If someone were to ask me to describe 'beauty' my first thought would be to describe you because in my eyes beauty isn’t just a word beauty is you.",
+"You cross my mind in the smallest moments, when I’m laughing, when I’m lost in thoughts, when I see something beautiful.",
+"You mean a lot to me. Sorry if I didn’t show it in a way you needed.",
+"I love you in a way you'll never notice and this is the most painful kind of love you made me feel.",
+"The sunset reminds me of you.",
+"I realized I still loved you when I’m with you I don’t miss anything but when I’m with others I miss you.",
+"I’m going to plant you like seeds in my dreams and water them every night until you blossom into a reality that I can feel with my bare hands.",
+"Maybe it was your laugh or your eyes or your smile, maybe it was your hair or voice, personality or watching you talk but whatever it was it made me fall pretty damn hard.",
+"I skip some songs because they sound too much like you.",
+"I wanted to text you but I asked Jesus to watch over you for me.",
+"I read a book I think about you, I see a sunset, I think about you, I hear your favorite song, I think about you, and even in my dreams I still think about you.",
+"If loving you is a mistake, then let me be wrong forever because it feels right.",
+"You're the only fish in my sea, my only bird in the sky, the only planet in my solar system, my only star in the sky.",
+"I looked at you once and the idea of forever made sense, you looked at me once and my entire idea of forever changed its name to you.",
+// add more lines if you want...
+];
