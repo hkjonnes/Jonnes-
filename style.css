@@ -31,4 +31,70 @@ button {
   background: rgba(255,255,255,0.2);
   padding: 20px;
   border-radius: 20px;
+} 
+:root{
+  --bg:#b57bff;
+  --card: rgba(255,255,255,0.12);
+  --accent:#6b21a8;
 }
+
+body{
+  margin:0;
+  font-family:"Comic Sans MS", "Baloo", "Fredoka", cursive, sans-serif;
+  background:linear-gradient(180deg,var(--bg),#8e63f4);
+  color:white;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+.title{ font-size:36px; margin:0; text-shadow:0 2px 8px rgba(0,0,0,0.2) }
+
+#userBadge{ font-size:13px; opacity:0.95; margin-top:6px; }
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2, minmax(300px,420px));
+  gap:18px;
+  margin-top:18px;
+  width:100%;
+  max-width:960px;
+}
+
+.card{
+  background:var(--card);
+  padding:14px;
+  border-radius:14px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.2);
+  min-height:120px;
+}
+
+.poemBox{ padding:14px; border-radius:10px; background:rgba(255,255,255,0.06); font-size:18px; min-height:80px }
+
+button{
+  background:white; color:var(--accent);
+  border:none; padding:10px 14px; border-radius:12px; font-weight:700; cursor:pointer;
+  box-shadow:0 6px 14px rgba(0,0,0,0.12);
+}
+
+.row{ display:flex; gap:8px; margin-top:10px; align-items:center; }
+
+.grid-small{ display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:10px; }
+
+.grid-small img{ width:100%; height:80px; object-fit:cover; border-radius:10px; }
+
+.chatBox{ height:160px; overflow:auto; background:rgba(0,0,0,0.12); padding:8px; border-radius:8px; display:flex; flex-direction:column-reverse; }
+
+.chatMessage{ padding:6px 8px; border-radius:8px; margin-bottom:6px; background:rgba(255,255,255,0.06); font-size:14px; }
+
+.drawArea{ background:rgba(0,0,0,0.08); height:300px; border-radius:8px; overflow:hidden; display:flex; align-items:stretch; }
+
+#drawCanvas{ width:100%; height:100%; display:block; touch-action:none; cursor:crosshair; }
+
+@media (max-width:860px){
+  .grid{ grid-template-columns:1fr; }
+}
+
